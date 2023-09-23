@@ -1,3 +1,6 @@
+mod game;
+mod tests;
+
 fn main() {
-    println!("Hello, world!");
+    tests::console_test::test_init();
 }
