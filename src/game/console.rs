@@ -1,4 +1,4 @@
-use std::{collections::{HashSet, HashMap}, fmt::format};
+use std::collections::{HashSet, HashMap};
 
 #[derive(PartialEq, Eq, Hash)]
 enum InputSession {
