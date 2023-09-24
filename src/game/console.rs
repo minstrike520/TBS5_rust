@@ -1,4 +1,4 @@
-use std::collections::{HashSet, HashMap};
+use std::{collections::{HashSet, HashMap}, fmt::format};
 
 #[derive(PartialEq, Eq, Hash)]
 enum InputSession {
@@ -11,6 +11,12 @@ enum InputSession {
 pub struct IllegalOperation {
     reason: &'static str,
     detail: HashMap<&'static str, String>
+}
+
+impl ToString for IllegalOperation {
+    fn to_string(&self) -> String {
+        format!("{}: {:#?}",self.reason, self.detail)
+    }
 }
 
 pub struct Console {
