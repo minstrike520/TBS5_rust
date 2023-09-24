@@ -3,5 +3,10 @@ mod tests;
 mod utils;
 
 fn main() {
-    tests::console_test::test_init();
+
+}
+
+fn test() {
+    // tests::console_test::test_init();
+    tests::command_parser_test::test();
 }
