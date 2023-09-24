@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "TBS5_rust"
+name = "tbs5_rust"
 version = "0.1.0"

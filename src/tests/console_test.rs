@@ -1,3 +1,4 @@
+#[allow(unused)]
 pub fn test_init() {
     use crate::game::console::Console as Console;
     use std::collections::HashMap;
@@ -10,11 +11,11 @@ pub fn test_init() {
 
     let mut cons = Console::new();
     match cons.init(init_data) {
-        Ok(T) => {
+        Ok(t) => {
             println!("ok");
         },
-        Err(E) => {
-            println!("{:#?}", E)
+        Err(e) => {
+            println!("{:#?}", e)
         }
     }
 }

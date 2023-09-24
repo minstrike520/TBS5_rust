@@ -1,6 +1,6 @@
 use crate::utils::command_parser;
 
-
+#[allow(unused)]
 pub fn test() {
     for s in [
         "asdf",
